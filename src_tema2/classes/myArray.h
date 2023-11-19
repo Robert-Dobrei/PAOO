@@ -4,7 +4,7 @@
 #include "myInterface.h"
 
 class myArray : public myInterface{
-    private:
+    protected:
         int n = 0;
         int avMemory = 0;
         int *array = NULL;

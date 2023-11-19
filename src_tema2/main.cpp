@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "myArray.h"
+#include "mySecondArray.h"
 
 int main() {
     std::cout << "Creating Array1 and pushing some data...\n";
@@ -33,4 +34,9 @@ int main() {
     myArray Array4(std::move(Array3));
 
     std::cout << "Array4: "; Array4.print();
+
+    std::cout << "Creating Array5...\n";
+    mySecondArray Array5 = mySecondArray({6, 2, 1, 9, 4, 5});
+    Array5.sortArray();
+    Array5.print();
 }

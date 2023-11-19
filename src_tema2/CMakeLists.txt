@@ -9,5 +9,6 @@ add_executable(myApp main.cpp)
 target_link_libraries(myApp PUBLIC myArray)
 target_link_libraries(myApp PUBLIC myInterface)
 target_link_libraries(myApp PUBLIC utils)
+target_link_libraries(myApp PUBLIC mySecondArray)
 
 target_include_directories(myApp PUBLIC classes)
