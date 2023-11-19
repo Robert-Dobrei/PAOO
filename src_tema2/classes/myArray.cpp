@@ -151,7 +151,7 @@ void myArray::sortArray() {
 }
 
 void myArray::print() {
-    std::cout << "[";
+    std::cout << "myArray: [";
 
     for(int i=0; i<n; i++) {
         std::cout << array[i] << " ";

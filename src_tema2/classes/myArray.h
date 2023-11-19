@@ -1,8 +1,9 @@
 #pragma once
 
 #include <vector>
+#include "myInterface.h"
 
-class myArray {
+class myArray : public myInterface{
     private:
         int n = 0;
         int avMemory = 0;
