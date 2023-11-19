@@ -3,6 +3,7 @@
 #include <vector>
 
 #include "myArray.h"
+#include "utils.h"
 
 myArray::myArray(int totalSize) {
     std::cout << "Constructor called\n";
@@ -151,11 +152,6 @@ void myArray::sortArray() {
 }
 
 void myArray::print() {
-    std::cout << "myArray: [";
-
-    for(int i=0; i<n; i++) {
-        std::cout << array[i] << " ";
-    }
-
-    std::cout << "\b]\n";
+    std::cout << "myArray::: ";
+    utils::printArrayOfInt(array, n);
 }
